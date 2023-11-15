@@ -1,13 +1,15 @@
 {
-  "name": "webpack-starter",
+  "name": "webpack-bootstrap5-starter",
   "version": "1.0.0",
   "author": {
     "name": "Andrei Victor Bulearcă",
     "email": "andrei.bulearca@gmail.com",
     "url": "https://andreivictor.ro/"
   },
-  "description": "A starter frontend boilerplate using Webpack 5, SASS, PostCSS, Babel, ESLint, Stylelint, Prettier and more.",
+  "description": "A starter frontend boilerplate using Webpack 5, Bootstrap 5, SASS, PostCSS, Babel, ESLint, Stylelint, Prettier and more.",
   "keywords": [
+    "bootstrap",
+    "bootstrap5",
     "javascript",
     "stylelint",
     "html",
@@ -83,5 +85,9 @@
     "package-json-lint": "npx npm-package-json-lint .",
     "prettier:check": "prettier --check .",
     "prettier:format": "prettier --write ."
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2"
   }
 }

@@ -1,14 +1,10 @@
 @use 'sass:math';
 
 .app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: auto 1fr;
   height: 100%;
   font-size: calc(10px + 2vmin);
-  color: var(--#{$prefix}color-text);
-  background: var(--#{$prefix}color-bg);
 
   &__logo {
     height: 36vmin;
@@ -20,6 +16,18 @@
           animation: app-logo-bounce 2s infinite alternate;
         }
       }
+    }
+  }
+
+  @at-root [data-bs-theme='light'] &__bs-theme-toggle {
+    .bi-sun-fill {
+      display: none;
+    }
+  }
+
+  @at-root [data-bs-theme='dark'] &__bs-theme-toggle {
+    .bi-moon-stars-fill {
+      display: none;
     }
   }
 }

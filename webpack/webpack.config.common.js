@@ -56,7 +56,7 @@ module.exports = {
       templateParameters: {
         publicUrl: publicUrl.slice(0, -1),
       },
-      title: 'Webpack Starter',
+      title: 'Webpack Bootstrap5 Starter',
     }),
     new CopyPlugin({
       patterns: [

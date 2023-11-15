@@ -13,6 +13,9 @@ module.exports = {
     process.env.NODE_ENV === 'production'
       ? purgecss({
           content: ['./src/**/*.{html,js}'],
+          fontFace: true,
+          variables: true,
+          keyframes: true,
         })
       : false,
   ].filter(Boolean),
