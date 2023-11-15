@@ -1,0 +1,35 @@
+@use 'sass:math';
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: calc(10px + 2vmin);
+  color: var(--#{$prefix}color-text);
+  background: var(--#{$prefix}color-bg);
+
+  &__logo {
+    height: 36vmin;
+    pointer-events: none;
+
+    @at-root {
+      @media (prefers-reduced-motion: no-preference) {
+        & {
+          animation: app-logo-bounce 2s infinite alternate;
+        }
+      }
+    }
+  }
+}
+
+@keyframes app-logo-bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}

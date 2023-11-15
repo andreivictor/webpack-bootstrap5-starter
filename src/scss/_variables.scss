@@ -1,0 +1,26 @@
+//  Variables
+
+// Prefix for :root CSS variables
+$prefix: app- !default;
+
+// Font family
+// stylelint-disable value-keyword-case
+$font-family-base:
+  system-ui,
+  -apple-system,
+  'Segoe UI',
+  Roboto,
+  'Helvetica Neue',
+  'Noto Sans',
+  'Liberation Sans',
+  Arial,
+  sans-serif,
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol',
+  'Noto Color Emoji' !default;
+// stylelint-enable value-keyword-case
+
+// Colors
+$color-bg: #e2e8f0 !default;
+$color-text: #64748b !default;
